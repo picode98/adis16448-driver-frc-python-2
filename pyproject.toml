@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "robotpy-build>=2020.0.25,<2021.0.0",
+    "wpilib>=2020.1.2.3,<2021.0.0",
+]
+
+[tool.robotpy-build]
+base_package = "adis16448"
+
+[tool.robotpy-build.wrappers."adis16448".maven_lib_download]
+artifact_id = "adis16448-cpp"
+group_id = "com.github.juchong"
+repo_url = "http://maven.highcurrent.io/maven"
+version = "2020.r1"
+libs = ["adis16448imu"]
+
+[tool.robotpy-build.wrappers."adis16448"]
+name = "adis16448"
+sources = []
+depends = ["wpilibc", "wpiutil", "wpilib_core"]
+
+generate = [
+    # adi
+    { ADIS16448_IMU = "adi/ADIS16448_IMU.h" }
+]
+
+generation_data = "gen"
+
+[tool.robotpy-build.metadata]
+name = "adis16448"
+description = "ADIS16448 Driver Wrapper for RobotPy"
+author = "Saaman Khalilollahi"
+author_email = "not-yet-present@example.com"
+url = "https://github.com/picode98/adis16448-driver-frc-python-2"
+license = "BSD-3-Clause"
+install_requires = [
+    "wpilib>=2020.1.2.3,<2021.0.0",
+]
