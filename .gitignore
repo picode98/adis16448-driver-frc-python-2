@@ -1,2 +1,5 @@
 **/__pycache__
 **/.vscode
+/adis16448
+/adis16448.egg-info
+/build

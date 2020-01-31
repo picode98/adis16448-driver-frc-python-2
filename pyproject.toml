@@ -7,16 +7,10 @@ requires = [
 [tool.robotpy-build]
 base_package = "adis16448"
 
-[tool.robotpy-build.wrappers."adis16448".maven_lib_download]
-artifact_id = "adis16448-cpp"
-group_id = "com.github.juchong"
-repo_url = "http://maven.highcurrent.io/maven"
-version = "2020.r1"
-libs = ["adis16448imu"]
-
 [tool.robotpy-build.wrappers."adis16448"]
 name = "adis16448"
-sources = []
+extra_includes = ["ADIS16448-RoboRIO-Driver/c++/src/main/include"]
+sources = ["ADIS16448-RoboRIO-Driver/c++/src/main/cpp/ADIS16448_IMU.cpp"]
 depends = ["wpilibc", "wpiutil", "wpilib_core"]
 
 generate = [
