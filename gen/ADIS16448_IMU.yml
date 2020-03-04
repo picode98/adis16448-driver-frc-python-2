@@ -1,5 +1,8 @@
 ---
 
+extra_includes:
+- frc/smartdashboard/SendableBuilder.h
+
 attributes:
   FLASH_CNT:
   XGYRO_OUT:
