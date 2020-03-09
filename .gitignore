@@ -1,6 +1,8 @@
 **/__pycache__
 **/.vscode
-/adis16448
+/adis16448/*
+!/adis16448/__init__.py
+!/adis16448/adis16448_module.cpp
 /adis16448.egg-info
 /build
 /dist

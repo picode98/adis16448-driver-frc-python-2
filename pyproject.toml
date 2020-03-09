@@ -10,7 +10,7 @@ base_package = "adis16448"
 [tool.robotpy-build.wrappers."adis16448"]
 name = "adis16448"
 extra_includes = ["ADIS16448-RoboRIO-Driver/c++/src/main/include"]
-sources = ["adis16448_module.cpp", "ADIS16448-RoboRIO-Driver/c++/src/main/cpp/ADIS16448_IMU.cpp"]
+sources = ["adis16448/adis16448_module.cpp", "ADIS16448-RoboRIO-Driver/c++/src/main/cpp/ADIS16448_IMU.cpp"]
 depends = ["wpilibc", "wpiutil", "wpilib_core", "wpiHal"]
 
 generate = [
