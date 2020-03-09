@@ -4,3 +4,5 @@
 /adis16448.egg-info
 /build
 /dist
+/vc*.pdb
+**/imgui.ini
