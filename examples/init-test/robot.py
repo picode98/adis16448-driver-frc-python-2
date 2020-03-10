@@ -12,7 +12,7 @@ class MyRobot(IterativeRobot):
         pass
 
     def teleopPeriodic(self):
-        """Runs the motors with tank steering"""
+        """Runs frequently during teleop mode"""
         pass
 
 if __name__ == "__main__":

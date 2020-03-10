@@ -8,3 +8,4 @@
 /dist
 /vc*.pdb
 **/imgui.ini
+**/.deploy_cfg
