@@ -6,3 +6,5 @@ from . import _init_adis16448
 from ._adis16448 import ADIS16448_IMU, offset_data
 
 __all__ = ["ADIS16448_IMU", "offset_data"]
+
+from .version import version as __version__
